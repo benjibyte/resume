@@ -1,3 +1,46 @@
+/*This CSS file was created by Benjamin Brinkerhoff, and was created with the assistance of AI...
+...sort of. Mostly just querying Google's AI mode and researching. The code itself is mostly written by Benjamin Brinkerhoff; whereas the "AI-Assistance" looks like
+as follows:
+
+1. I run into a question or a wall, and need to do more research.
+2. I ask Google's AI Mode (essentially Googling "what is the industry standard for X), or Documentation, etc.
+3. I read what the AI gives me, and I decide what to include, what to actually use, how it applies to what I want to do etc.
+4. If its a small edit (like just a few lines of code) then I will copy it with my own fingers typing with my own keyboard rather than just pasting it in.
+    Otherwise, if it's a HUGE change/addition, then I will say with an inline comment where and when I simply "pasted" vibecoded stuff. (THIS IS RARE)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
-    font-family: system-ui;
+  * margin: 0;
+  * padding: 0;
+    /*Fonts*/
+    font-family: "Montserrat", sans-serrif;
+
+    /*Variables*/
+    --text-mainColor: #D3C6AA;
+    /*Default Colors: (Everforest colors)*/
+    color: var(--text-mainColor);
+    background: var(--background-main);
+    
+    --background-main: #2D353B;
+    --background-shadow: #232A2E;
+    --background-panel: #3D484D;
+    --background-outline: #56635F;
+}
+
+nav, nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  
+  position: sticky;
+  
+  top: 0;
+  z-index: 999;
+}
+
+li {
+  list-style: none;
+  padding: 0;
+  margin-right: 1em;
 }
